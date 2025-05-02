@@ -1,0 +1,696 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background: #f7f8fc;
+  color: #1c1e21;
+}
+
+
+@media (max-width: 1024px) {
+  .cta{display:none;}
+  .hero,
+  .chat-container,
+  .courses-grid,
+  .testimonial-footer,
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .course-card,
+  .analysis-box,
+  .actions-box,
+  .chat-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta{display:none;}
+  header nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .courses-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .testimonial-nav {
+    justify-content: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    margin: 1rem 0;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .text-card {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta{display:none;}
+  .hero-left h1 {
+    font-size: 2em;
+  }
+
+  .courses-header h2 {
+    font-size: 24px;
+  }
+
+  .testimonial-nav button,
+  .cta-btn,
+  .view-all-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: auto;
+    height: auto;
+    padding: 8px;
+    font-size: 10px;
+  }
+}
+
+  body {
+    background: #f7f8fc;
+    color: #1c1e21;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: white;
+  }
+  header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #111;
+  }
+  header .cta {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border-radius: 25px;
+    border: 2px solid black;
+  }
+   .cta:hover {
+    cursor: pointer;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    background: white;
+  }
+  .hero-left {
+    max-width: 50%;
+  }
+  .hero-left h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  .hero-left p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+  }
+  .stats {
+    display: flex;
+    gap: 30px;
+  }
+  .stat {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .chat-section {
+    background: linear-gradient(135deg, #0f2f82, #1957df);
+    color: white;
+    padding: 60px;
+  }
+  .chat-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  .chat-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .chat-box {
+    background: white;
+    color: black;
+    flex: 1 1 300px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .chat-box .messages {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  .analysis-box, .actions-box {
+    background: white;
+    color: black;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+  }
+  .progress-bar {
+    background: #ddd;
+    border-radius: 6px;
+    height: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  .progress {
+    height: 10px;
+    background: green;
+    width: 66%;
+  }
+  @media (max-width: 768px) {
+    .cta{display:none;}
+    .hero {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px 20px;
+      margin: 5px;
+    }
+    .chat-container {
+      flex-direction: column;
+      margin: 5px;
+    }
+    header {
+      flex-direction: column;
+      padding: 20px;
+      margin: 3px;
+    }
+  }
+  .btn-container-1 {
+    float: left;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .btn-container-2 {
+    float: right;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .bot-container{
+    display: flex;
+    align-items: center;      
+    gap: 30px;
+  }
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f3f4f6;
+  }
+  
+  .image-container {
+    position: relative;
+    width: fit-content;
+  }
+  
+  .image-container img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+  }
+  
+  .text-card {
+    position: absolute;
+    bottom: -30px;
+    left: -70px;
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .numbers {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: bold;
+    color: #002244;
+    margin-bottom: 10px;
+  }
+  
+  .text-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #002244;
+  }
+  
+  .text-card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+  }
+  .chat-box {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .header {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .message {
+    background-color: #f1f5f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100px; 
+    height: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #e5e7eb;
+    color: blue;
+    cursor: pointer;
+    font-size: 9px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .input-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+  }
+
+  .input-container button {
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .courses-section {
+    padding: 40px 80px;
+    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .courses-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .courses-header p {
+    color: #6b7280;
+    max-width: 600px;
+  }
+  
+  .view-all-btn {
+    background-color: #002d62;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .courses-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    width: calc(50% - 15px);
+    box-sizing: border-box;
+  }
+  
+  .course-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .course-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .tag {
+    background-color: #f1f1f1;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+  
+  .author {
+    margin-left: auto;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .course-card h3 {
+    font-size: 18px;
+    margin: 10px 0 8px;
+  }
+  
+  .course-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .cta-btn {
+    background-color: #002d62;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+  }
+  footer {
+    background: transparent;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #d3d3d3, #e9ecf1);
+    
+  }
+  
+  .newsletter {
+    background: linear-gradient(90deg, #1f3ba8, #0b59cc);
+    color: white;
+    border-radius: 16px;
+    text-align: center;
+    padding: 2rem;
+    max-width: 90%;
+    margin: 0 auto 2rem;
+  }
+  
+  .newsletter h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .newsletter button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #fcd34d;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    color: rgb(8, 8, 57);
+    font-weight: lighter;
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+    margin: 1rem;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo-icon {
+    margin-right: 0.5rem;
+    font-size: 2rem;
+  }
+  
+  .footer-column p {
+    font-size: 0.85rem;
+    color: rgb(8, 8, 57);
+    margin-top: 1rem;
+  }
+  
+  .social-icons i {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+  }
+  .fas {
+    margin: 5px;
+    padding: 5px;
+  }
+  .fab {
+    margin: 7px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: #9ec2f7;
+  }
+  .faq-section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .faq-header p {
+    color: #0033a0;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .faq-header h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0 2rem;
+    line-height: 1.4;
+  }
+  
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    cursor: pointer;
+  }
+  
+  .faq-question .faq-number {
+    font-weight: bold;
+    color: goldenrod;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  
+  .faq-question h3 {
+    flex: 1;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .faq-question .icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .faq-answer {
+    margin-left: 2.5rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #555;
+    display: none;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .testimonial-section {
+    background: linear-gradient(to bottom, #f8f6ff, #f2f2f7);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  blockquote {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: auto;
+    font-style: italic;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+  
+  .testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-inline: auto;
+  }
+  
+  .author-info-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .author-info-container .avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #aaa;
+    border-radius: 50%;
+  }
+  
+  .author-text strong {
+    display: block;
+    font-weight: 600;
+  }
+  
+  .author-text p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .testimonial-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .testimonial-nav button {
+    background: #002c6e;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .testimonial-nav button.prev {
+    background: white;
+    border: 1px solid #002c6e;
+    color: #002c6e;
+  }
+  
+  .testimonial-nav span {
+    font-size: 0.9rem;
+    color: #444;
+  }
+  

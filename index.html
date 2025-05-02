@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SalesRank.AI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">SalesRank.AI</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Pricing</a>
+      <a href="#">Consulting</a>
+      <a href="#">AI Coach</a>
+    </nav>
+    <div class="cta">Get started</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Your AI-Powered Sales Coach</h1>
+      <div class="bot-container">
+        <img src="ai-bot.png">
+      <p>Get real-time coaching, script suggestions and deal-closing strategies powered by advanced AI technology</p>
+    </div>
+      <div class="stats">
+        <div class="stat">2000+<br/>Your protection</div>
+        <div class="stat">7001+<br/>Provide tailored</div>
+        
+    </div>
+      </div>
+      <div class="hero-section">
+        <div class="image-container">
+          <img src="right-bot.jpg" alt="Robot AI">
+          <div class="text-card">
+            <div class="numbers">
+              <span>721+</span>
+              <span>1000+</span>
+            </div>
+            <h2>Growth is our priority.</h2>
+            <p>
+              As a full-service business agency, we specialize in helping companies of all sizes optimize their operations.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+
+  <section class="chat-section">
+    <h2>Take a Suggestion Coaching</h2>
+    <div class="chat-container">
+      <div class="chat-box">
+        <div class="header">AI Sales Coach</div>
+        <div class="message">
+          <div id="messages" style="margin-top: 10px;"></div>
+          <p id="defaultMessage">Hello! I'm your AI sales coach. How can I help you improve your sales performance today?</p>
+        </div>
+        
+        <div class="button-container">
+          <button class="btn">How do I handle objections?</button>
+          <button class="btn">Give me a cold email template</button>
+          <button class="btn">Closing techniques</button>
+          <button class="btn">Negotiation tips</button>
+        </div>
+        <div class="input-container">
+          <input type="text" placeholder="Ask anything you need" id="userInput">
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+      
+      <div class="analysis-box">
+        <h4>Real-time Analysis</h4>
+        <p>Confidence Level</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+        <p>85% improvement in objection handling</p>
+      </div>
+
+      <div class="actions-box">
+        <h4 style="margin-bottom: 10px;">Quick Actions</h4>
+            <div class="btn-container-1">
+                <img src="book.png" alt="" width="50" height="50">
+                <p>Generate Script</p>
+            </div>
+            <div class="btn-container-2">
+                <img src="images.jpeg" width="50" height="50">
+                <p>Practice Pitch</p>
+    </div>
+</div>
+</div>
+  </section>
+  <section class="courses-section">
+    <div class="courses-header">
+      <div>
+        <h2>Our Courses</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et...</p>
+      </div>
+      <button class="view-all-btn">View All</button>
+    </div>
+  
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="robotlookingdown.jpeg" alt="Course Image" width="50" height="200">
+        <div class="course-tags">
+          <span class="tag">4 Weeks</span>
+          <span class="tag">Beginner</span>
+          <span class="author">By John Smith</span>
+        </div>
+        <h3>Web Design Fundamentals</h3>
+        <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design principles...</p>
+        <button class="cta-btn">Get it Now</button>
+      </div>
+      <div class="course-card">
+        <img src="robot2.jpeg" alt="Course Image" width="50" height="200">
+        <div class="course-tags">
+          <span class="tag">4 Weeks</span>
+          <span class="tag">Beginner</span>
+          <span class="author">By John Smith</span>
+        </div>
+        <h3>Web Design Fundamentals</h3>
+        <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design principles...</p>
+        <button class="cta-btn">Get it Now</button>
+      </div>
+    </div>
+    <div class="faq-header">
+      <p>Frequently asked questions</p>
+      <h1>Constant collaboration is how we roll. Let’s see if we are a good fit.</h1>
+    </div>
+
+    <div class="faq-container">
+      <div class="faq-item active">
+        <div class="faq-question">
+          <span class="faq-number">01</span>
+          <h3>Why should I choose Humestic?</h3>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Bottleneck mice my capacity is full, nor incentivization we need to start advertising on social media, or helicopter view, for what the. Let’s put a pin in that we need to build it so that it scales, are there any leftovers in the kitchen?, if you're not hurting you're not winning loop back
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-number">02</span>
+          <h3>I like your works, how do we start a project?</h3>
+          <span class="icon">–</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-number">03</span>
+          <h3>What info is required to get a quotation?</h3>
+          <span class="icon">–</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <blockquote>
+      “ They thoroughly analyze our industry and target audience, allowing them to develop customized campaigns that effectively reach and engage our customers. Their creative ideas and cutting-edge techniques have helped us stay ahead of the competition.”
+    </blockquote>
+    <div class="testimonial-footer">
+      <div class="author-info-container">
+        <div class="avatar"></div>
+        <div class="author-text">
+          <strong>Michael Kaizer</strong>
+          <p>CEO of Basecamp Corp</p>
+        </div>
+      </div>
+      <div class="testimonial-nav">
+        <button class="prev"><i class="fas fa-arrow-left"></i></button>
+        <span>01/05</span>
+        <button class="next"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    
+  </section>
+
+  </section>
+  <footer>
+    <div class="newsletter">
+      <h2>Ready to Hire Smarter?</h2>
+      <p>Unlock Exclusive Insights Subscribe to Our Newsletter</p>
+      <button>Join Now</button>
+    </div>
+
+    <div class="footer-container">
+      <div class="footer-column">
+        <div class="logo">
+          <span class="logo-icon">🛡️</span>
+          <h3>Logo</h3>
+        </div>
+        <p>
+          SalesRank.AI offers a comprehensive suite of AI-powered solutions to help you find expert sales professionals who can elevate every aspect of your business. From performance rankings and skill verification to industry benchmarking and real-time analytics, we provide the insights and tools to optimize your sales strategy and drive growth.
+        </p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <ul>
+          <li>Service</li>
+          <li>Agency</li>
+          <li>Case Study</li>
+          <li>Resource</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Licence</h4>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Copyright</li>
+          <li>Email Address</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> (406) 555-0120</li>
+          <li><i class="fas fa-envelope"></i> Hey@boostim.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> 2972 Westheimer Rd. Santa Ana, Illinois 85486</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  
+
+  <script>
+    let messageSent = false;
+  
+    function sendMessage() {
+      const input = document.getElementById("userInput");
+      const messageBox = document.getElementById("messages");
+      const defaultMessage = document.getElementById("defaultMessage");
+  
+      if (input.value.trim() !== "") {
+        if (!messageSent && defaultMessage) {
+          defaultMessage.remove();
+          messageSent = true;
+        }
+  
+        const msg = document.createElement("p");
+        msg.textContent = input.value;
+        messageBox.appendChild(msg);
+        input.value = "";
+      }
+    }
+  </script>
+  
+</body>
+</html>
