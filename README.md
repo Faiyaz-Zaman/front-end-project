@@ -26,9 +26,6 @@ project-folder/
 Screenshot of the website
 ![Alt Text](images/ss.png)
 
-Follow these steps to set up and run the project locally:
 
-### 1. Clone the Repository
 
-```bash
-git clone https://github.com/yourusername/your-repo-name.git
+
